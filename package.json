@@ -5,10 +5,16 @@
   "license": "MIT",
   "scripts": {
     "build": "bili",
+    "lint": "eslint -c .eslintrc.js . --ext .js,.vue",
     "prepare": "yarn build"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "bili": "^4.7.2",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-vue": "^5.2.2",
     "rollup-plugin-vue": "^4.7.2",
     "vue-template-compiler": "^2.6.10"
   },
