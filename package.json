@@ -1,6 +1,14 @@
 {
   "name": "example-vue-library",
   "version": "0.1.0",
+  "productName": "Vue HelloWorld",
+  "description": "A vue component for a show a text message",
+  "repository": "coderdiaz/example-vue-library",
+  "author": {
+    "name": "Javier Diaz",
+    "email": "hello@coderdiaz.me",
+    "url": "https://coderdiaz.me"
+  },
   "private": false,
   "license": "MIT",
   "scripts": {
@@ -8,6 +16,20 @@
     "lint": "eslint -c .eslintrc.js . --ext .js,.vue",
     "test:unit": "jest",
     "prepare": "yarn lint && yarn test:unit && yarn build"
+  },
+  "main": "dist/hello-word.cjs.js",
+  "module": "dist/hello-world.esm.js",
+  "unpkg": "dist/hello-world.js",
+  "jsdelivr": "dist/hello-world.js",
+  "cdn": "dist/hello-world.js",
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
@@ -19,6 +41,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-vue": "^5.2.2",
+    "husky": "^1.3.1",
     "jest": "^24.7.1",
     "jest-serializer-vue": "^2.0.2",
     "jest-transform-stub": "^2.0.0",
