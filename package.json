@@ -1,11 +1,17 @@
 {
   "name": "example-vue-library",
-  "version": "0.1.0",
-  "productName": "Vue HelloWorld",
-  "description": "A vue component for a show a text message",
-  "repository": "coderdiaz/example-vue-library",
+  "version": "0.0.1",
+  "productName": "Example Vue Library",
+  "description": "Example for create your own Vue.js package and publish using Bili.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderdiaz/example-vue-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coderdiaz/example-vue-library/issues"
+  },
   "author": {
-    "name": "Javier Diaz",
+    "name": "Javier Diaz Chamorro",
     "email": "hello@coderdiaz.me",
     "url": "https://coderdiaz.me"
   },
@@ -25,7 +31,17 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "hello-world",
+    "example",
+    "vue",
+    "vuejs",
+    "vue-component",
+    "components",
+    "vue.js",
+    "vue-framework",
+    "vue-library"
+  ],
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint"
