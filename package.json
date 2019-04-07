@@ -7,7 +7,7 @@
     "build": "bili",
     "lint": "eslint -c .eslintrc.js . --ext .js,.vue",
     "test:unit": "jest",
-    "prepare": "yarn build"
+    "prepare": "yarn lint && yarn test:unit && yarn build"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.29",
