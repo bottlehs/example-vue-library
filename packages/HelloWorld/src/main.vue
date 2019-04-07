@@ -9,7 +9,7 @@ export default {
   props: {
     message: {
       type: String,
-      required: true,
+      default: 'Hello World',
     },
   },
 };
